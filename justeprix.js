@@ -13,9 +13,9 @@ function reset(){
     nombreAleatoire=0;
 
     vie = 10;
-    document.getElementById("text").style.dysplay="block";
+    document.getElementById("text").style.visibility="visible";
     document.getElementById("text").value= "";
-   console.log(document.getElementById("text").style.display);
+
 }
 
 
@@ -38,7 +38,7 @@ function nombreCpu(){
 
 document.getElementById("ok").addEventListener("click", function(){
 
-    document.getElementById("vies").innerHTML="il vous reste "+vie+" vies";
+    document.getElementById("vies").innerHTML="vie:<br>"+vie;
 
    nombreCpu();
     viesPerdu();
@@ -61,7 +61,8 @@ document.getElementById("ok").addEventListener("click", function(){
     }
 
     if ( vie ==0){
-        document.getElementById("text").style.display ="none";
+        document.getElementById("text").style.visibility="hidden";
+
     }
 
 });

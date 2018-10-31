@@ -1,3 +1,50 @@
-#text{
-    display: block;
+header{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+input{
+    position: relative;
+    left: 46%;
+}
+
+#button-box{
+    position: relative;
+    left: 45.6%;
+}
+
+#ok{
+    margin-top: 5%;
+  margin-right: 1.8%;
+}
+
+#reset{
+    margin-top: 5%;
+    margin-left:1.8%;
+}
+
+#resultat{
+    display: inline-block;
+    position: absolute;
+    left: 35% ;
+    margin-top: 5%;
+    border: solid red;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    line-height: 77px;
+    font-size: 2em;
+
+}
+
+#vies{
+    display: inline-block;
+    position: absolute;
+    border: solid red;
+    text-align: center;
+    font-size: 2em;
+    left: 70%;
+    width: 150px;
+
+
 }
