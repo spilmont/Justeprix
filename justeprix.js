@@ -7,6 +7,10 @@ var vie = 10;
 function viesPerdu()
 {
     vie--;
+    if(vie <0)
+    {
+        document.getElementById("vies").innerHTML="vie:<br>0 ";
+    }
 }
 
 function reset(){
@@ -15,8 +19,9 @@ function reset(){
     vie = 10;
     document.getElementById("text").style.visibility="visible";
     document.getElementById("text").value= "";
-    document.getElementById("text").innerHTML = vie;
-
+    document.getElementById("vies").innerHTML = "vie:";
+    document.getElementById("vies").style.color = "black";
+    document.getElementById("resultat").style.animation= "none";
 
 
 }
