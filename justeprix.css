@@ -1,6 +1,16 @@
+body{
+    background-color: gold;
+}
+
 header{
     text-align: center;
     margin-bottom: 5%;
+    background-image: url("assets/Logo_Le_Juste_Prix.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:150px;
+
 }
 
 input{
@@ -28,19 +38,34 @@ input{
     position: absolute;
     left: 35% ;
     margin-top: 5%;
-    border: solid red;
+    border: inset black;
     width: 500px;
     height: 100px;
     text-align: center;
     line-height: 77px;
     font-size: 2em;
 
+
 }
+
+@keyframes clignoteR  {
+
+    0% {background-color: gold}
+    50%{background-color: red}
+    100%{background-color: gold}
+}
+
+@keyframes clignoteV {
+    0% {background-color: gold}
+    50% {background-color: green}
+    100% {background-color: gold}
+}
+
 
 #vies{
     display: inline-block;
     position: absolute;
-    border: solid red;
+    border: inset gold;
     text-align: center;
     font-size: 2em;
     left: 70%;
