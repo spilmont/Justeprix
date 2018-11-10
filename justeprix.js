@@ -1,7 +1,14 @@
 var nombreAleatoire =0;
 var vie = 10;
 
+function perdu(){
+    var perdu = document.createElement("audio");
+    document.body.appendChild(perdu);
+    perdu.src="mario-meurt.wav";
+    perdu.autoplay="false";
+    perdu.play();
 
+}
 
 
 function viesPerdu()
@@ -80,6 +87,7 @@ document.getElementById("ok").addEventListener("click", function(){
     if ( vie < 0){
         document.getElementById("text").style.visibility="hidden";
         document.getElementById("vies").style.color = "red";
+        perdu();
 
     }
 
