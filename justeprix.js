@@ -10,6 +10,28 @@ function perdu(){
 
 }
 
+function gagner(){
+    var sonG = document.createElement('audio');
+    document.body.appendChild(sonG);
+    sonG.src="hihi.mp3";
+    sonG.autoplay="false";
+    sonG.play();
+
+    var img = document.createElement('img');
+    document.body.appendChild(img);
+    img.src="hihi.png";
+    img.id="hihi";
+    img.style.position= "absolute";
+    img.style.animation ="ss 2s";
+
+
+
+
+}
+
+
+
+
 
 function viesPerdu()
 {
@@ -64,24 +86,25 @@ document.getElementById("ok").addEventListener("click", function(){
     if( text == nombreAleatoire){
         document.getElementById("resultat").innerHTML="bravo vous avez trouver le nombre";
         document.getElementById("resultat").style.border = "inset green";
-        document.getElementById("resultat").style.animation ="clignoteV 5ms infinite";
+        document.getElementById("resultat").style.animation ="clignoteV 2s infinite";
+        gagner();
 
         }
     else if(text > nombreAleatoire){
         document.getElementById("resultat").innerHTML="c'est MOIN!!!";
         document.getElementById("resultat").style.border = "inset red";
-        document.getElementById("resultat").style.animation ="clignoteR 5ms infinite";
+        document.getElementById("resultat").style.animation ="clignoteR 2s infinite";
     }
     else if(text < nombreAleatoire){
         document.getElementById("resultat").innerHTML="c'est PLUS!!!";
         document.getElementById("resultat").style.border = "inset red";
-        document.getElementById("resultat").style.animation ="clignoteR 5ms infinite";
+        document.getElementById("resultat").style.animation ="clignoteR 2s infinite";
     }
 
     else{
         document.getElementById("resultat").innerHTML="ceci n'est pas un nombre";
         document.getElementById("resultat").style.border = "inset red";
-        document.getElementById("resultat").style.animation ="clignoteR 10ms infinite";
+        document.getElementById("resultat").style.animation ="clignoteR 2s infinite";
     }
 
     if ( vie < 0){
