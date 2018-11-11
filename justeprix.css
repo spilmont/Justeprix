@@ -71,5 +71,16 @@ input{
     left: 70%;
     width: 150px;
 
+}
 
+@keyframes ss {
+    0%{left:120%;
+        visibility: hidden;}
+    50%{left:82%;
+    visibility: visible}
+    100%{left: 120%;
+    visibility: hidden}
+}
+#hihi{
+    visibility: hidden;
 }
